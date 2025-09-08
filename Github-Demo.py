@@ -1,8 +1,7 @@
-#  Copyright (c) 2025. Harald Zainzinger, HTL Rennweg
+__author__ = "Zainzinger Harald"
 
 def main():
-    print("This is a type hinting stub file for the Github-Demo module.")
-    print("It contains no executable code.")
+    print("Cooles Programm!")
 
 if __name__ == "__main__":
     main()
