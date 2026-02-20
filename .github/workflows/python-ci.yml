@@ -1,0 +1,40 @@
+name: Python CI (Lint & Doctests)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+
+      - name: Python einrichten
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Abhängigkeiten installieren
+        run: |
+          pip install -r requirements.txt
+
+      # ---------------------------
+      # LINTING & FORMAT CHECK
+      # ---------------------------
+      - name: Code automatisch formatieren
+        run: |
+          black .
+
+      - name: Style-Check (flake8)
+        run: |
+          flake8 .
+
+      # ---------------------------
+      # TESTS (inkl. DOCTESTS)
+      # ---------------------------
+      - name: Alle Tests ausführen
+        run: |
+          pytest --doctest-glob="*.py"
