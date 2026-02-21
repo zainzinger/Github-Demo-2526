@@ -37,4 +37,4 @@ jobs:
       # ---------------------------
       - name: Alle Tests ausführen
         run: |
-          pytest --doctest-glob="*.py"
+           pytest --doctest-glob="*.py" --doctest-modules

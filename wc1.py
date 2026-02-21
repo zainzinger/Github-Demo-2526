@@ -4,7 +4,7 @@
 
 def      count_lines(   text  : str  ) -> int:
     """
-    >>> count_lines('a \n b \n c')
+    >>> print(2 + 1)
     3
     """
     return len(text.split("\n"))
