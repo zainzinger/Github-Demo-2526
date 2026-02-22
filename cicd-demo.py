@@ -7,7 +7,7 @@ Demonstriere was in der Github CI/CD-Pipeline passiert, wenn
 * ein Testfall fehlschlägt
 """
 
-import math
+# import math
 
 
 def count_lines( text ):
