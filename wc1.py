@@ -1,5 +1,5 @@
 #  Copyright (c) 2026. Harald Zainzinger, HTL Rennweg
-import doctest
+# import doctest
 
 
 def count_lines(text):
