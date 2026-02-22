@@ -36,4 +36,4 @@ jobs:
       # ---- Tests
       - name: Tests (Doctests in wc-Dateien)
         run: |
-          pytest --doctest-modules wc*.py
+          pytest --doctest-modules *.py
