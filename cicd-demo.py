@@ -10,7 +10,7 @@ Demonstriere was in der Github CI/CD-Pipeline passiert, wenn
 # import math
 
 
-def count_lines( text ):
+def count_lines(text):
     """
     >>> count_lines('a  b c')
     4
